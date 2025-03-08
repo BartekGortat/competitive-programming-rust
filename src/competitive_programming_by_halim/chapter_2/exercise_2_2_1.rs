@@ -1,4 +1,4 @@
-use std::collections::{BTreeMap, BTreeSet, HashSet};
+use std::collections::{BTreeMap, HashSet};
 use std::hash::Hash;
 
 pub fn test_1_contains_duplicate<T>(vals: &Vec<T>) -> bool
@@ -266,6 +266,7 @@ mod test {
         assert_eq!(actual_len, expected_len);
     }
 
+    #[test]
     fn task_6_test_find_median() {
         // given
         let vals = vec![9, 1, 5, 7, 2, 4, 6, 6, 2, 3, 1];
